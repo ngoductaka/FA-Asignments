@@ -7,13 +7,13 @@
         // this là một trong những cơ chế gây rối nhất trong JS, theo em this là gì ?
         // Cách hiểu 1: this trỏ tới function f, đúng hay sai?
         // ham là 1 kiểu object và this là 1 keyWord. tùy thuộc vào context mà this đại diện/ đề cập đến các đối tượng khác nhau 
-        // 
+        // this trong function la globle object 
 
 // ----------------------------------------------------------- vi dụ 1 ------------------------------------------------------------
 function f(num) {
     // this.count++; // ghi lại gía trị đếm hàm f được gọi bao nhiêu lần
     this.count = 12;// private => khong truy nhap thay đổi từ bên ngoài
-    console.log("f: " + num, 'count: '+count);// return f: 1 count NaN
+    console.log("f: " + num, 'count: '+f.cocount);// return f: 1 count NaN
     
 }
 // console.log(f);
